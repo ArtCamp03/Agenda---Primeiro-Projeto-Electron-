@@ -1,0 +1,42 @@
+{
+  "name": "Teste",
+  "version": "1.0.0",
+  "description": "A plicaçao para guardar anotaçoes",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "build": "electron-builder main.js"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Artur R C",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^8.2.5",
+    "electron-builder": "^22.6.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.0",
+    "lodash": "^4.17.15",
+    "popper.js": "^1.16.1",
+    "vue": "^2.6.11"
+  },
+  "build":{
+    "appId": "com.escola.aplicativoTeste",
+    "productName": "Anotaçoes",
+    "directories": {
+      "output": "dist"
+    },
+    "publish": null,
+    "win":{
+      "icon": "tray.png",
+      "target": "nsis"
+    }
+  }
+}
